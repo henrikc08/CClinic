@@ -23,7 +23,7 @@ h6 {
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
-    margin: 0 0 1.5em;
+    margin: 1.5em 0;
     color: #56565A;
 }
 
@@ -85,7 +85,9 @@ header .top-bar,
                 0 7px 0 1px #333,
                 0 14px 0 1px #333;
 }
-
+.top-bar .name h1 a {
+    width: 70%;
+}
 
 
 .top-bar.expanded .toggle-topbar a {
@@ -110,6 +112,22 @@ main p {
 }
 
 
+.acordos {
+    text-align: center;
+    font-size: 0;
+}
+.acordos img {
+    max-height: 50px;
+    width: auto;
+}
+.acordos li {
+    font-size: 16px;
+    display: inline-block;
+    list-style: none;
+    width: 14%;
+    margin-bottom: 1.5em;
+}
+
 .especialidades.row {
     list-style: none;
     text-transform: uppercase;
@@ -128,6 +146,10 @@ main p {
     text-align: center;
 }
 
+.acordos li {
+    width: 50%;
+}
+
 
 /* medium */
 @media only screen and (min-width: 40.063em) {
@@ -139,6 +161,13 @@ main p {
     }
     .especialidades li:nth-child(2n+1) {
         text-align: left;
+    }
+    .acordos li {
+        width: 25%;
+    }
+
+    .top-bar .name h1 a {
+        width: auto;
     }
 }
 
@@ -153,5 +182,8 @@ main p {
     .especialidades li:nth-child(3n+1) {
         text-align: left;
     }
+
+    .acordos li {
+        width: 14%;
+    }
 }
-*/
